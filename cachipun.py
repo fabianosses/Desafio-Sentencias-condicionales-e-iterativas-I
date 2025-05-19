@@ -27,12 +27,14 @@ while True:
     print(f"computador: {computador}")
 
     if usuario == computador :
-        print("empate!!!...")
+        usuario = input(""" Empate :| 
+                        elige: piedra, papel o tijera.
+                        o escribe "salir" para finalizar """)
 
     elif (usuario == "piedra" and computador == "tijera") or \
         (usuario == "papel" and computador == "piedra") or \
         (usuario == "tijera" and computador == "papel"):
-        usuario = input(""" Ganaste!!!... 
+        usuario = input(""" Ganaste!!! :) 
                         elige: piedra, papel o tijera.
                         o escribe "salir" para finalizar """)
     else:
